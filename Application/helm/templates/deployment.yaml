@@ -20,28 +20,28 @@ spec:
       containers:
         - resources: {}
         readinessProbe:
-              httpGet:
-                path: /health/readiness
-                port: {{ .Values.containers.containerPort  }}
-                scheme: HTTP
-              initialDelaySeconds: 1
-              timeoutSeconds: 1
-              periodSeconds: 10
-              successThreshold: 1
-              failureThreshold: 3
-          livenessProbe:
-              httpGet:
-                path: /health/liveliness
-                port: {{ .Values.containers.containerPort }}
-                scheme: HTTP
-              initialDelaySeconds: 1
-              timeoutSeconds: 1
-              periodSeconds: 10
-              successThreshold: 1
-              failureThreshold: 3
-          env:
-              - name: PORT
-                value: {{ .Values.containers.containerPort | quote }}
+            httpGet:
+              path: /health/readiness
+              port: {{ .Values.containers.containerPort  }}
+              scheme: HTTP
+            initialDelaySeconds: 1
+            timeoutSeconds: 1
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+        livenessProbe:
+            httpGet:
+              path: /health/liveliness
+              port: {{ .Values.containers.containerPort }}
+              scheme: HTTP
+            initialDelaySeconds: 1
+            timeoutSeconds: 1
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+        env:
+          - name: PORT
+            value: {{ .Values.containers.containerPort | quote }}
           terminationMessagePath: /dev/termination-log
           name: {{ .Chart.Name }}
           ports:
