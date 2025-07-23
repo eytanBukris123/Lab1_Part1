@@ -3,7 +3,7 @@ deploy1:
 
   containers:
       containerPort: 8080
-      image: 'quay.io/eytanbukris/openshift_img'
+      image: 'quay.io/eytanbukris/openshift_img' 
       tag: 'chart_v3'
 
   service:

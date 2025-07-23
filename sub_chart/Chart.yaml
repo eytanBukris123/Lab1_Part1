@@ -1,10 +1,10 @@
 apiVersion: v2
-name: workshop-test
+name: lab1
 description: A Helm chart for Kubernetes
 type: application
 dependencies:
   - name: lab1
-    repository: oci://ghcr.io/eytanbukris123/helm/
+    repository: oci://ghcr.io/eytanbukris123/helm
     version: "1.0.0"
     alias: deploy1
 version: 1.0.0
