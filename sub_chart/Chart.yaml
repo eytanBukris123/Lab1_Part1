@@ -3,8 +3,8 @@ name: workshop-test
 description: A Helm chart for Kubernetes
 type: application
 dependencies:
-  - name: sub_chart
-    repository: oci://ghcr.io/eytanBukris123/helm/
+  - name: lab1-1.0.0.tgz
+    repository: oci://ghcr.io/eytanbukris123/helm/
     version: "1.0.0"
     alias: deploy1
 version: 1.0.0
