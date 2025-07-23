@@ -2,5 +2,8 @@ dependencies:
 - name: lab1
   repository: oci://ghcr.io/eytanbukris123/helm
   version: 1.0.0
-digest: sha256:1eb4d9006f205c5cee0a32690a5e15988d29f86843dd968410adae8a3feebdb0
-generated: "2025-07-23T11:09:44.910856996Z"
+- name: lab1
+  repository: oci://ghcr.io/eytanbukris123/helm
+  version: 1.0.0
+digest: sha256:898774949fe38751e05722c52c215f890610fc70fad0a65474f8bd6065612337
+generated: "2025-07-23T11:34:17.048155614Z"
