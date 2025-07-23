@@ -1,9 +1,9 @@
 deploy1: 
-  ReplicaNumber: 1
+  ReplicaNumber: 3
 
   containers:
       containerPort: 8080
-      image: 'quay.io/argo-helm-workshop/workshop-app'
+      image: 'quay.io/eytanbukris/openshift_img'
       tag: 'chart_v3'
 
   service:
